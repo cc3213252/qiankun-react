@@ -2,6 +2,16 @@
 
 用umi框架实现qiankun相对简单一点，只需配置.umirc.ts一个文件  
 
+## 前端技术栈
+
+[React](https://react.docschina.org/)：javascript框架，Facebook开源    
+[Umijs](https://umijs.org/zh-CN/docs): 插件化的企业级前端应用框架，阿里开源    
+[qiankun](https://qiankun.umijs.org/zh): 微前端解决方案，阿里开源    
+[Ant-design pro](https://pro.ant.design/zh-CN/): Ant Design和umi封装的企业级中后台前端/设计解决方案  
+[Redux](https://redux.js.org/): 状态共享库  
+[Hooks](https://react.docschina.org/docs/hooks-intro.html): 不写class情况下使用状态  
+[Typescript](https://www.tslang.cn/)
+
 ## 1、最简实现umi + qiankun  
 
 主要参考[umi官网](https://umijs.org/zh-CN/docs/getting-started)创建项目  

@@ -5,10 +5,17 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
+    
     {
       path: '/login',
       component: './login/index',
+    },
+    {
+      path: '/',
+      component: '@/layouts/menu',
+      routes: [
+        { path: '/', component: '@/pages/index' },
+      ],
     },
     {
       name: 'sub-app-1',
