@@ -1,0 +1,41 @@
+.page {
+  min-height: 100vh;
+  background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+  background-color: rgba(200, 200, 200, 0.15);
+}
+
+.section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.login {
+  width: 400px;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 10px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.btn-smscode,
+.btn-submit {
+  width: 100%;
+}

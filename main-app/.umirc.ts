@@ -7,6 +7,10 @@ export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/index' },
     {
+      path: '/login',
+      component: './login/index',
+    },
+    {
       name: 'sub-app-1',
       icon: 'smile',
       path: '/sub-app-1',
@@ -23,6 +27,18 @@ export default defineConfig({
           entry: '//localhost:8001', // html entry
         },
       ],
+    },
+  },
+  proxy: {
+    '/user': {
+      target: 'http://localhost:8000/',
+      changeOrigin: true,
+      pathRewrite: { '^/user': '' },
+    },
+  },
+  devServer: {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
     },
   },
 });
