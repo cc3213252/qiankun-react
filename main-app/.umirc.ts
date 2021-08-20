@@ -30,10 +30,10 @@ export default defineConfig({
     },
   },
   proxy: {
-    '/user': {
+    '/api': {
       target: 'http://localhost:8000/',
       changeOrigin: true,
-      pathRewrite: { '^/user': '' },
+      pathRewrite: { '^/api': '' },
     },
   },
   devServer: {

@@ -3,9 +3,10 @@ import { RequestConfig } from 'umi';
 import { userInfo } from './utils/auth';
 
 export const request: RequestConfig = {
+  prefix: '/api',
   timeout: 10000 * 5,
   headers: {
-    'x-token': userInfo.getToken(),
+    'x-token': userInfo.getToken() || '',
   },
   responseInterceptors: [
     async (response) => {
